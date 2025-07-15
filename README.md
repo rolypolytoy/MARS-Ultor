@@ -1,12 +1,12 @@
-UHV (Rotary vane, Turbomol, Ion pump) for $1000.
-
-Identify fabrication of turbomol pump and figure out today, with feedback from Vinod. Includes details on balancing and sheet metal fabrication.
+UHV for <$1000.
 
 ## Turbomolecular Pump
 
 We of course buy a [rotary vane pump](https://www.amazon.in/HAVC-RX-1S-Single-Stage-Vacuum/dp/B079J3Y781) for the roughing stage.
 
 [Two fully ceramic ball bearings](https://www.amazon.in/12x28x8mm-Precision-Equipment-Installation-Maintenance/dp/B0C1JSDWKB) (12ID, 28OD, 8H) can be bought for a pittance so we don't need to do maintenance or lubrication to get to the >40k RPM we need, nor do we need to fiddle around with any messy magnetics. We're using a [Brushless DC Motor](https://robu.in/product/t-motors-2207-v2-1750-kv-brushless-motor/) for the >40k RPM speeds (at up to 800W), an [electronic speed controller](https://robu.in/product/readytosky-80a-esc-2-6s-brushless-esc-speed-controller-for-rc-drone//), a [24VDC 40A Power Supply](https://www.amazon.in/Switching-Industrial-Transformer-Converter-Security/dp/B0BR87VXHJ), and a basic touchscreen [LCD Screen Display](https://www.amazon.in/Robocraze-Colour-Screen-320x480-Arduino/dp/B07922JJYM) for IO with good UI/UX. ESP32 will of course be its MCU.
+
+No welding for rotor/stator assembly- simply use spacing rings for the shaft/outside for rotor/stator respectively
 
 DN250 CF/ CF 10" inlet. KF 40 outlet.
 
@@ -30,7 +30,7 @@ P20 die block    250×250×20 mm  3.5 h VMC + 1.5 h EDM  → ₹ 6,450
 
 Total machining ≈ ₹ 9,250
 
-Total cost = 4 * (4120 + 9250) = ₹ 53,480
+Total cost = 4 * (4120 + 9250) = ₹ 53,480 (fixed)
 
 ## Ion Pump
 
