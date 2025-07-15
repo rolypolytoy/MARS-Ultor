@@ -32,7 +32,7 @@ Total machining ≈ ₹ 9,250
 
 Total cost = 4 * (4120 + 9250) = ₹ 53,480
 
-## Ion Pump (https://www.youtube.com/watch?v=_snzYepQTjI)
+## Ion Pump
 
 We're using a getter (sputtering) ion pump design. For this, we will of course need a [high voltage power supply](https://ar.aliexpress.com/item/1005003518403820.html) which will be connected (+5kV) to the anode, and GND to the cathode. The cathode must be made from titanium, the anodes from aluminium, and an axial magnetic field provided by two [huge permanent Neodymium magnets](https://www.amazon.in/Neodymium-Diameter-Magnetics-Underwater-Retrieval/dp/B07Q6V25NL) with 120.7 mm diameter and 17.8 mm height.
 
