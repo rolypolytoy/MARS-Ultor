@@ -13,7 +13,9 @@ DN250 CF/ CF 10" inlet. KF 40 outlet.
 Cooling via [2 Arctic 140mm fans](https://www.amazon.in/ARCTIC-P14-Max-High-Performance-Controlled/dp/B09VH2HXM1?).
 Aesthetics, and o-rings.
 
-Tool and die for turbomol sheet metal:
+Note: spacers made with Al-3003-O and heated after application to fill micro-imperfections. Pressure is always applied.
+
+Tool and die for turbomol sheet metal (Al-7075 1 mm w/anodization and heat treatment):
 
 Material cost:
 P20 plate 250 x 250 x 20 mm  → 10 kg @ ₹120/kg  → ₹1,200
