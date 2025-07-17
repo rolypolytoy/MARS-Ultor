@@ -4,16 +4,19 @@ UHV for <$1000.
 
 We of course buy a [rotary vane pump](https://www.amazon.in/HAVC-RX-1S-Single-Stage-Vacuum/dp/B079J3Y781) for the roughing stage.
 
-[Two fully ceramic ball bearings](https://www.amazon.in/12x28x8mm-Precision-Equipment-Installation-Maintenance/dp/B0C1JSDWKB) (12ID, 28OD, 8H) can be bought for a pittance so we don't need to do maintenance or lubrication to get to the >40k RPM we need, nor do we need to fiddle around with any messy magnetics. We're using a [Brushless DC Motor](https://robu.in/product/t-motors-2207-v2-1750-kv-brushless-motor/) for the >40k RPM speeds (at up to 800W), an [electronic speed controller](https://robu.in/product/readytosky-80a-esc-2-6s-brushless-esc-speed-controller-for-rc-drone//), a [24VDC 40A Power Supply](https://www.amazon.in/Switching-Industrial-Transformer-Converter-Security/dp/B0BR87VXHJ), and a basic touchscreen [LCD Screen Display](https://www.amazon.in/Robocraze-Colour-Screen-320x480-Arduino/dp/B07922JJYM) for IO with good UI/UX. ESP32 will of course be its MCU.
+[Two fully ceramic ball bearings](https://www.amazon.in/12x28x8mm-Precision-Equipment-Installation-Maintenance/dp/B0C1JSDWKB) (12ID, 28OD, 8H) can be bought for a pittance so we don't need to do maintenance or lubrication to get to the >40k RPM we need, nor do we need to fiddle around with any messy magnetics. We're using a [Brushless DC Motor](https://robu.in/product/t-motors-2207-v2-1750-kv-brushless-motor/) for the >40k RPM speeds (at up to 800W), an [electronic speed controller](https://robu.in/product/readytosky-80a-esc-2-6s-brushless-esc-speed-controller-for-rc-drone//), a [24VDC 40A Power Supply](https://www.amazon.in/Switching-Industrial-Transformer-Converter-Security/dp/B0BR87VXHJ), and a basic touchscreen [LCD Screen Display](https://www.amazon.in/Robocraze-Colour-Screen-320x480-Arduino/dp/B07922JJYM) for IO with good UI/UX. Raspberry Pi 5 will of course be its MCU.
+
+Add teeny hole for positioning.
 
 No welding for rotor/stator assembly- simply use spacing rings for the shaft/outside for rotor/stator respectively
 
 DN250 CF/ CF 10" inlet. KF 40 outlet.
 
-Cooling via [2 Arctic 140mm fans](https://www.amazon.in/ARCTIC-P14-Max-High-Performance-Controlled/dp/B09VH2HXM1?).
-Aesthetics, and o-rings.
+Cooling via [2 Arctic P12 MAX fans](https://www.amazon.in/ARCTIC-P12-Max-Performance-Regulation/dp/B09VDNKL4G?).
 
-Note: spacers made with Al-3003-O and heated after application to fill micro-imperfections. Pressure is always applied.
+O-rings etc.
+
+Note: spacers made with Al-3003-O and heated after application to fill micro-imperfections. Sheet metal is Al-6061-T4 (heat treated after for aging to full strength)
 
 Tool and die for turbomol sheet metal (Al-7075 1 mm w/anodization and heat treatment):
 
