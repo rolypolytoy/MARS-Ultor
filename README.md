@@ -1,11 +1,11 @@
-#S1 (MARS Ultor): UHV Chamber for <$1000
+# S1 (MARS Ultor): UHV Chamber for <$1000
 
 Key necessities: Unit cost under 40,000 INR.
 Capability to make 10,000 at a moment's notice. 
 
 Figure it out.
 
-##Turbomolecular Pump
+## Turbomolecular Pump
 
 A357-T6 (electropolished and anodized) for all mechanical parts unless otherwise specified, with investment casting as the main fabrication method. Wax casting for mass-production from 3d printed molds, and PLA casting for prototyping.
 
