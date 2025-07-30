@@ -1,48 +1,50 @@
-UHV for <$1000.
+#S1 (MARS Ultor): UHV Chamber for <$1000
 
-## Turbomolecular Pump
+Key necessities: Unit cost under 40,000 INR.
+Capability to make 10,000 at a moment's notice. 
 
-We of course buy a [rotary vane pump](https://www.amazon.in/HAVC-RX-1S-Single-Stage-Vacuum/dp/B079J3Y781) for the roughing stage.
+Figure it out.
 
-[Two fully ceramic ball bearings](https://www.amazon.in/12x28x8mm-Precision-Equipment-Installation-Maintenance/dp/B0C1JSDWKB) (12ID, 28OD, 8H, one above, one below) can be bought for a pittance so we don't need to do maintenance or lubrication to get to the >40k RPM we need, nor do we need to fiddle around with any messy magnetics. We're using a [Brushless DC Motor](https://robu.in/product/t-motors-2207-v2-1750-kv-brushless-motor/) for the >40k RPM speeds (at up to 800W), an [electronic speed controller](https://robu.in/product/readytosky-80a-esc-2-6s-brushless-esc-speed-controller-for-rc-drone//), a [24VDC 40A Power Supply](https://www.amazon.in/Switching-Industrial-Transformer-Converter-Security/dp/B0BR87VXHJ), and a basic touchscreen [LCD Screen Display](https://www.amazon.in/Robocraze-Colour-Screen-320x480-Arduino/dp/B07922JJYM) for IO with good UI/UX. Raspberry Pi 5 will of course be its MCU.
+##Turbomolecular Pump
 
-Add teeny hole for positioning.
+A357-T6 (electropolished and anodized) for all mechanical parts unless otherwise specified, with investment casting as the main fabrication method. Wax casting for mass-production from 3d printed molds, and PLA casting for prototyping.
 
-No welding for rotor/stator assembly- simply use spacing rings for the shaft/outside for rotor/stator respectively
+Bill of materials:
 
-DN250 CF/ CF 10" inlet. KF 40 outlet.
+- [Backing Pump](https://www.amazon.in/i-Rex-RX-1D-Double-Stage-Vacuum/dp/B07HZL62Q1)
+- [Hybrid Ceramic 627Z ABEC-9 Bearings](https://www.amazon.in/Swiss-Hybrid-Ceramic-Bearings-Skates/dp/B0BWV24VPB)
+- [BLDC (6S 3000KV 32A)](https://robu.in/product/emax-ecoii-2004-3000kv-brushless-motor)
+- [2000W ESC](https://robu.in/product/readytosky-80a-esc-2-6s-brushless-esc-speed-controller-for-rc-drone/)
+- [1000W PSU](https://www.amazon.in/Switching-Industrial-Transformer-Converter-Security/dp/B0BR87VXHJ)
+- [Sunon 80mm x 80 mm x 25 mm](https://www.amazon.in/JUSTFLY-PMD1208PMB1-DC12V-80X80X38MM-Cooling/dp/B0DJZFQB9L)
+- [TFT 3.5 inch LCD screen](https://www.amazon.in/IDUINO-480X320-Display-Compatible-Mega2560/dp/B0CSDXYT9Q)
+- [ESP-WROOM-32](https://www.amazon.in/SquadPixel-ESP-32-Bluetooth-Development-Board/dp/B071XP56LM)
+- [100mm ID, 2.5 mm cross-section Viton O-Ring](https://www.amazon.in/Oring-ID-100-2-5-Pack/dp/B08PTFPBWD)
+- [Spark Plugs for Feedthroughs](https://www.amazon.in/Bharat-Saarthi-Super-4-Stroke-Cutter/dp/B0FDWR1H3M?)
+- [Metal Mesh](https://www.amazon.in/AVIATION-METAL-ALLOYS-Stainless-Steel/dp/B097LCFCSY)
+- [Black Tape](https://www.amazon.in/VCR-Black-Color-Tape-Meters/dp/B07RWTPX48)
 
-Cooling via [2 Arctic P12 MAX fans](https://www.amazon.in/ARCTIC-P12-Max-Performance-Regulation/dp/B09VDNKL4G?).
-
-Labyrinth seal.
-
-Note: spacers made with Al-3003-O and heated after application to fill micro-imperfections. Sheet metal is Al-6061-T4 (heat treated after for aging to full strength)
-
-Tool and die for turbomol sheet metal (Al-7075 1 mm w/anodization and heat treatment):
-
-Material cost:
-P20 plate 250 x 250 x 20 mm  → 10 kg @ ₹120/kg  → ₹1,200
-1045 plate 300 x 300 x 20 mm (top) → 14 kg @ ₹80/kg  → ₹1,120
-1045 plate 300 x 300 x 20 mm (bottom) → 14 kg @ ₹80/kg  → ₹1,120
-1045 plate 300 x 300 x 12 mm (stripper) → 8.5 kg @ ₹80/kg → ₹680
-Total steel ≈ ₹4,120 
-
-Machining cost:
-P20 die block    250×250×20 mm  3.5 h VMC + 1.5 h EDM  → ₹ 6,450
-1045 top shoe    300×300×20 mm  1.0 h VMC               → ₹ 1,000
-1045 bottom shoe 300×300×20 mm  1.0 h VMC               → ₹ 1,000
-1045 stripper    300×300×12 mm  0.8 h VMC               → ₹ 800
-
-Total machining ≈ ₹ 9,250
-
-Total cost = 4 * (4120 + 9250) = ₹ 53,480 (fixed)
+Dynamic balancing of every part in the rotating assembly is the highest priority.
 
 ## Ion Pump
 
-We're using a getter (sputtering) ion pump design. For this, we will of course need a [high voltage power supply](https://ar.aliexpress.com/item/1005003518403820.html) which will be connected (+5kV) to the anode, and GND to the cathode. The cathode must be made from titanium, the anodes from aluminium, and an axial magnetic field provided by two [huge permanent Neodymium magnets](https://www.amazon.in/Neodymium-Diameter-Magnetics-Underwater-Retrieval/dp/B07Q6V25NL) with 120.7 mm diameter and 17.8 mm height.
+We're using a getter ion pump topology. We require:
 
-We'll be using the patented [StarCell design](https://patents.google.com/patent/US6388385B1/en) that Agilent HAD (past tense). It expired in 2020, and regardless, the patent was never filed in India, so we're good to use it. Maybe not for the first few models, but it allows, apart from the technical benefits of the design, the creation of anodes by bending sheet metal, which is a tremendous cost-saver in the even reasonably middle-term. Hehehe.
+- [10kV 5mA PSU](https://www.ubuy.co.in/product/3OZYG6M2C-dzhot51-high-voltage-power-supply-50w-dc-2kv-10kv-single-output-electrostatic-precipitator-power-supply-cx-50)
+- [75mm x 55 mm x 20mm Neodymium Magnet](https://www.amazon.in/EVEREST-MAGNETICS-Rectangle-Neodymium-removable/dp/B0F7F6TNCV)
+- [Torr Seal](https://www.ebay.com/itm/196945783079)
+
+Spark Plug (holds up the two terminals) welded via TIG. 
 
 ## Bayard-Alpert Gauge
 
-Collector: 0.1 mm OD, Cathode/Anode: 0.25 mm OD tungsten wire. 
+Cathode/Anode/Collector: 1 mm OD tungsten wire.
+
+- [Tungsten Wire](https://www.amazon.in/CALANDIS-Pottery-Tungsten-Tools-Sets/dp/B0FF9ZLDH7)
+- [24V to 200V Boost](2)
+
+## Miscellaneous
+
+- [Bellows](https://www.amazon.in/Stainless-Flexible-Handshower-Replacement-Lifetime/dp/B07BFF5TZR)
+
+Deadline: 14th August 2025.
